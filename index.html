@@ -1,1 +1,20 @@
-test
+---
+layout: default
+---
+
+{% include header.html %}
+
+<div class="portfolio">
+	<p>{{ site.description }}</p>
+</div>
+
+<div class="blog">
+    <h1>Posts:</h1>
+    <ul>
+        {% for post in site.posts %}
+        <li>
+            <span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

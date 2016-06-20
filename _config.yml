@@ -1,0 +1,20 @@
+# Site settings
+title: Dumpster Fire
+name: Dumpster Fire
+description: > 
+  Dedicated to the growing dumpster fire that is programming. 
+google_verification: null
+baseurl: "" 
+url: "http://dumpsterfire.io" 
+github_username:  hunterel
+
+# Sass
+sass:
+  style: :compressed
+  sass_dir: _sass
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
